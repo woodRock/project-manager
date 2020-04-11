@@ -47,7 +47,7 @@
         description: null,
         image: null,
         link: null,
-        date: new Date()
+        time: null
       }
     },
     created() {
@@ -61,7 +61,7 @@
                 this.description = doc.data().description
                 this.image = doc.data().image
                 this.link = doc.data().link
-                this.date = new Date()
+                this.time = doc.data().time
               }
             })
           }
@@ -78,7 +78,7 @@
                   description: this.description,
                   image: this.image,
                   link:this.link,
-                  time:this.date
+                  time:this.time
                 }
                 if ( id === this.$route.params.project_id) {
                   doc.ref.update(serialize(project))
