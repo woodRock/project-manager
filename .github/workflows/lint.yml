@@ -2,7 +2,7 @@ name: Lint
 on:
   push:
     branches:
-      - master
+      - dev
 jobs:
   run-linters:
     runs-on: ubuntu-latest
