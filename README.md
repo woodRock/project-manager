@@ -4,3 +4,5 @@
 ![Lint](https://github.com/woodRock/vue-project-manager/workflows/Lint/badge.svg)
 
 Vue.js + Firebase application to manage the projects on my portfolio site
+
+N.B. Uses firebase authentication for WRITE access to database
