@@ -21,7 +21,10 @@
 </template>
 
 <script>
-  import db from './firebaseInit'
+  import firebase from './firebaseInit'
+
+  const db = firebase.firestore()
+
   export default {
     name: "dashboard",
     data() {

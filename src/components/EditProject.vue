@@ -33,11 +33,13 @@
 </template>
 
 <script>
-  import db from './firebaseInit'
+  import firebase from './firebaseInit'
 
   function serialize(object) {
     return JSON.parse(JSON.stringify(object));
   }
+
+  const db = firebase.firestore()
 
   export default {
     name: "edit-project",

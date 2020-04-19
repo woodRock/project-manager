@@ -18,7 +18,10 @@
   </div>
 </template>
 <script>
-  import db from './firebaseInit'
+  import firebase from './firebaseInit'
+
+  const db = firebase.firestore()
+  
   export default {
     name: "view-project",
     data() {
