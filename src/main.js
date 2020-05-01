@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueRouter from 'vue-router'
 import Router from '@/router/index'
+// import VueMarkdown from 'vue-markdown'
 
 Vue.use(VueRouter)
 
@@ -13,6 +14,8 @@ Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.config.productionTip = false
 Vue.use(NavbarPlugin)
+
+// Vue.use(VueMarkdown);
 
 new Vue({
   router: Router,

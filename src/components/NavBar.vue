@@ -1,9 +1,10 @@
 <template>
   <nav>
     <div class="nav-wrapper purple">
-      <div class="container">
-        <router-link to="/" class="brand-logo">Project Manager</router-link>
-      </div>
+      <ul>
+        <li><router-link to="/" class="brand-logo">Projects</router-link></li>
+        <li><router-link :to="{ name: 'blog', params: {} }" class="brand-logo">Blog</router-link></li>
+      </ul>
       <div class="secondary-content">
         <button @click="login"><i class="material-icons">person</i></button>
       </div>
