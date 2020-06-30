@@ -21,19 +21,19 @@
 </template>
 
 <script>
-  import firebase from './firebaseInit'
+  import firebase from '../firebaseInit'
 
   const db = firebase.firestore()
 
   export default {
-    name: "dashboard",
+    name: "project",
     data() {
       return {
         projects: []
       }
     },
     created() {
-      db.collection('projects').orderBy('title').get().then(
+      db.collection('projects').orderBy('time').get().then(
         querySnapshot => {
             querySnapshot.forEach(doc => {
               const data = {
@@ -42,7 +42,8 @@
                 'title': doc.data().title,
                 'description': doc.data().description
               }
-              this.projects.push(data)
+              // unshift() add an element to the start of the array
+              this.projects.unshift(data)
             })
           }
         )

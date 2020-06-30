@@ -37,7 +37,7 @@
 </template>
 
 <script>
-  import firebase from './firebaseInit'
+  import firebase from '../firebaseInit'
 
   function serialize(object) {
     return JSON.parse(JSON.stringify(object));
