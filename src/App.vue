@@ -7,14 +7,12 @@
   </div>
 </template>
 <script>
-  import NavBar from './components/navigation/NavBar'
-  export default {
-    name: 'App',
-    components: {
-      NavBar
-    }
+import NavBar from "./components/navigation/NavBar";
+export default {
+  name: "App",
+  components: {
+    NavBar
   }
+};
 </script>
-<style>
-
-</style>
+<style></style>
