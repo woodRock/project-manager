@@ -12,7 +12,7 @@
           <div class="row">
             <div class="input-field col s12">
               <textarea
-                class="box"
+                class="project-description"
                 type="textarea"
                 v-model="description"
                 required
@@ -36,6 +36,14 @@
     </div>
   </div>
 </template>
+
+<style>
+.project-description {
+  width: 100%;
+  height: 200px;
+  vertical-align: top;
+}
+</style>
 
 <script>
 import firebase from "../firebaseInit";

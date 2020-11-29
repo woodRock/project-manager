@@ -10,10 +10,10 @@
               <label for="">Title</label>
             </div>
           </div>
-          <div class="row box">
+          <div class="row">
             <div class="input-field col s12">
               <textarea
-                class="description"
+                class="description blog-description"
                 v-model="markdown"
                 placeholder="Markdown here"
                 required
@@ -30,7 +30,7 @@
 </template>
 
 <style>
-.box {
+.blog-description {
   height: 400px;
 }
 

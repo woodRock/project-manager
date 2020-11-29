@@ -12,7 +12,7 @@
           <div class="row">
             <div class="input-field col s12">
               <textarea
-                class="box"
+                class="blog-description"
                 type="textarea"
                 v-model="markdown"
                 required
@@ -28,7 +28,7 @@
 </template>
 
 <style>
-.box {
+.blog-description {
   width: 100%;
   height: 400px;
   vertical-align: top;
