@@ -10,7 +10,6 @@
         <div class="chip">
           {{ project.title }}
         </div>
-        {{ project.description }}
         <router-link
           class="secondary-content"
           v-bind:to="{
