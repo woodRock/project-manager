@@ -31,13 +31,12 @@
 
 <style>
 .blog-description {
-  height: 400px;
+  height: 800px;
 }
 
 .description {
   width: 100%;
   line-height: 1;
-  height: 100% !important;
 }
 </style>
 
