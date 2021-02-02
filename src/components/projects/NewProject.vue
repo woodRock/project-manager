@@ -79,7 +79,7 @@ export default {
       };
       db.collection("projects")
         .add(serialize(project))
-        .then(() => this.$router.push("/"))
+        .then(() => this.$router.push("/projects"))
         .catch(error => console.log(error));
     }
   }
